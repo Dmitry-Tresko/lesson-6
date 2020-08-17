@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Блок header */
+
+.header {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 5;
+
+    background: #55ADB7;
+}
+
+.header__title {
+    display: block;
+    width: 181px;
+
+    font-size: calc(10px + 1.8vw);
+    font-weight: normal;
+    font-family: 'Cherry Swash', cursive;
+
+    padding-top: 28px;
+    padding-bottom: 29px;
+
+    color: #FFFFFF;
+}
+
+.header__title:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+.header__navigation_block {
+    width: 473px;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    top: calc(50% - 7px);
+    margin-left: 478px;
+}
+
+.header__decoration--common {
+    font-size: calc(10px + 0.5vw);
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    position: relative;
+
+    color: #DCE3E4;  
+}
+
+.header__decoration--common:active {
+    color: #4C505D;
+}
+
+.header__decoration--common::after {
+    content: '';
+    width: 1.5px;
+    height: 18px;
+    transform: rotate(20deg);
+
+    position: absolute;
+    margin: 0 16px;
+
+    background: #DCE3E4;
+}
+
+.header__decoration--last {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    position: relative;
+
+    color: #DCE3E4;  
+}
+
+.header__decoration--last:active {
+    color: #4C505D;
+}
+
+/* Блок home */
+
+.home {
+    background: url(../img/sea_background.png) no-repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__title {
+    display: block;
+    width: 528px;
+
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: calc(10px + 2vw);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    padding-top: 217px;
+    padding-bottom: 46px;
+
+    color: #E4E4E4;
+}
+
+.home__btn {
+    width: 234px;
+    height: 47px;
+    border-radius: 0.5vh;
+
+    font-size: calc(10px + 1.3vw);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+    margin-bottom: 145px;
+
+    border-color: #E4E4E4;
+    color: #E4E4E4; 
+    background: none;
+}
+
+.home__btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: all .7s;
+}
+
+/* Блок exploring */
+
+.exploring {
+    margin: 0 auto;
+    text-align: center;
+
+    background: #FFFFFF;
+}
+
+.exploring__title {
+    display: block;
+    width: 630px;
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(10px + 1.3vw);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+    padding-top: 101px;
+    padding-bottom: 39px;
+
+    color: #4C505D;
+}
+
+.exploring__subtitle {
+    display: block;
+    width: 853px;
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(10px + 0.3vw);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+    margin-bottom: 70px;
+
+    color: #4C505D;
+}
+
+.exploring__icons_block {
+    display: flex;
+    width: 416px;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* Блок dhavan */
+
+.dhavan {
+    margin: 0 auto;
+    text-align: center;
+
+    background: #00D089;
+}
+
+.dhavan__general_info_block {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 412px;
+
+    padding-top: 97px;
+    padding-bottom: 62px;
+}
+
+.dhavan__round_avatar {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+
+    background: url(../img/dhavan_avatar_icon.png) no-repeat -5px 0;
+}
+
+.dhavan__round_avatar:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: all .7s;
+}
+
+.dhavan__personal_details_block {
+    display: flex;
+    width: 127px;
+    flex-direction: column;
+}
+
+.dhavan__name {
+    position: relative;
+
+    font-size: calc(10px + 1vw);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+
+    color: #E4E4E4;
+}
+
+.dhavan__name::after {
+    content: '“';
+
+    position: absolute;
+    display: block;
+    width: 127px;
+
+    opacity: .2;
+    font-size: calc(10px + 18.5vw);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: -145px;
+
+    transform: rotate(180deg);
+    color: #FFFFFF;
+}
+
+.dhavan__citate {
+    display: block;
+    width: 901px;
+
+    margin: 0 auto;
+
+    font-size: calc(10px + 0.5vw);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+
+    padding-bottom: 94px;
+
+    color: #FFFFFF;
+}
+
+/* Блок map */
+
+.map {
+    height: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../img/map_background.png) no-repeat;
+}
+
+.map__big_circle {
+    width: 431px;
+    height: 431px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    opacity: .85;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ecebe9;
+    background: #FFFFFF;
+}
+
+.map__form {
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.map__form--item {
+    height: 31px;
+
+    font-size: calc(10px + 0.3vw);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 14px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ecebe9;
+    background: #FFFFFF;
+}
+
+.map__form--message_item {
+    height: 81px;
+
+    font-size: calc(10px + 0.3vw);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: 0 left;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ecebe9;
+}
+
+.map__form--btn {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 194px;
+    left: calc(50% - 34px);
+
+    border-radius: 50%;
+    border: none;
+    background-color: #00D089;
+}
+
+.map__form--btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: all .7s;
+}
+
+.map__form--btn_tick_decor {
+    position: absolute;
+    background: #FFFFFF;
+}
+
+.map__fotm--btn_tick_left_part {
+    width: 50px;
+    height: 20px;    
+    transform: rotate(45deg);	
+}
+
+.map__fotm--btn_tick_right_part {
+    width: 100px;
+    height: 20px;    
+    transform: rotate(-45deg);
+    left: 16px;
+    top: -19px;
+}
+
+/* Блок footer */
+
+.footer {
+    width: 1280px;
+
+    text-align: center;
+    margin: 0 auto;
+
+    background: #00D089;
+}
+
+.footer__copyright {
+    font-size: calc(10px + 0.3vw);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    color: #FFFFFF;
+}

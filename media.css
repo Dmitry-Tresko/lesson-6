@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .header__navigation_block {
+        width: 56px;
+        height: 4px;
+
+        position: relative;
+
+        background: #DCE3E4;
+    }
+
+    .header__navigation_block::before {
+        width: 56px;
+        height: 4px;
+        position: absolute;
+
+        top: -2px;
+
+        background: #DCE3E4;
+    }
+
+    .header__navigation_block::after {
+        width: 56px;
+        height: 4px;
+        position: absolute;
+
+        top: 2px;
+
+        background: #DCE3E4;
+    }
+}
