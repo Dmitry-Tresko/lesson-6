@@ -13,14 +13,15 @@
         <header class="header">
             <div class="container">
                 <h1 class="header__title">Black Sea</h1>
-                <div class="header__navigation_container">
-                    <nav class="header__navigation_block">
-                        <a href="#" class="header__decoration--common">Home</a>
-                        <a href="#" class="header__decoration--common">About me</a>
-                        <a href="#" class="header__decoration--common">Portfolio</a>
-                        <a href="#" class="header__decoration--last">Contact me</a>
+                <div class="header__navigation-container">
+                    <nav class="header__navigation-block">
+                        <a href="#" class="header__link">Home</a>
+                        <a href="#" class="header__link">About me</a>
+                        <a href="#" class="header__link">Portfolio</a>
+                        <a href="#" class="header__link--last">Contact me</a>
                     </nav>
                 </div>
+               <div class="header__burger"></div> 
             </div>  
         </header>
 
@@ -28,14 +29,14 @@
             <div class="home">
                 <div class="container">
                     <h2 class="home__title">We need the tonic of wildness</h2>
-                    <button class="home__btn">Read more</button>
-                    <div class="home__scroll_bar">   
-                        <div class="home__scroll_item"></div>
-                        <div class="home__scroll_item"></div>
-                        <div class="home__scroll_item"></div>
-                        <div class="home__scroll_item"></div>
-                        <div class="home__scroll_item"></div>      
-                    </div>
+                    <button type="button" class="home__btn">Read more</button>
+                    <ul class="home__scroll-list">   
+                        <li class="home__scroll-list--item"></li>
+                        <li class="home__scroll-list--item"></li>
+                        <li class="home__scroll-list--item"></li>
+                        <li class="home__scroll-list--item"></li>
+                        <li class="home__scroll-list--item"></li>      
+                    </ul>
                 </div>
             </div>
 
@@ -44,38 +45,35 @@
                     <h2 class="exploring__title">At the same time that we are earnest to explore 
                         & learn all things</h2>
                     <p class="exploring__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <div class="exploring__icons_block">
-                        <img src="./img/shopping_bag_icon.png" alt="Shopping bag icon">
-                        <img src="./img/earth_icon.png" alt="Earth icon">
-                        <img src="./img/diplomat_icon.png" alt="Diplomat bag icon">
-                    </div>
+                    <ul class="exploring__icons-block">
+                        <li><img class="exploring__item" src="./img/shopping_bag_icon.png" alt="Shopping bag icon"></li>
+                        <li><img class="exploring__item" src="./img/earth_icon.png" alt="Earth icon"></li>
+                        <li><img class="exploring__item" src="./img/diplomat_icon.png" alt="Diplomat bag icon"></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="dhavan">
                 <div class="container">
-                    <div class="dhavan__general_info_block">
-                        <div class="dhavan__round_avatar"></div>
-                        <div class="dhavan__personal_details_block">
+                    <div class="dhavan__info-block">
+                        <div class="dhavan__avatar"></div>
+                        <div class="dhavan__details-block">
                             <h2 class="dhavan__name">Dhavan</h2>                          
                         </div>
                     </div>
-                    <blockquote class="dhavan__citate">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                    <blockquote class="dhavan__quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
                         a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</blockquote>
                 </div>
             </div>
             
             <div class="map">
                 <div class="container">
-                    <div class="map__big_circle">
-                        <form class="map__form">
+                    <div class="map__circle">
+                        <form action="#" method="get" class="map__form">
                             <input type="text" name="username" placeholder="Name" class="map__form--item">
                             <input type="email" name="email" placeholder="email address" class="map__form--item">
-                            <textarea name="message" placeholder="Message" class="map__form--message_item"></textarea>
-                            <button class="map__form--btn">
-                                <div class="map__form--btn_tick_decor" class="map__fotm--btn_tick_left_part"></div>
-                                <div class="map__form--btn_tick_decor" class="map__fotm--btn_tick_right_part"></div>
-                            </button>
+                            <textarea name="message" placeholder="Message" class="map__form--message"></textarea>
+                            <button type="submit" class="map__form--btn"></button>
                         </form>
                     </div>
                 </div>
@@ -89,4 +87,4 @@
         </footer>
     </div>
 </body>
-</html>           
+</html>   
